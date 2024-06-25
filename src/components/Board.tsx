@@ -38,74 +38,74 @@ const Board = () => {
                 <div className='contents'>
                     <section id='home'>
                         <div className='first-container'>
-                    <div className='img1'><img src={img1}/></div>
-                    <div className='btn1'>
-                        <img src={img2}/><br/>
-                        <button onClick={() => setModal1(!showModal1)}><BsCartCheckFill/>ADD</button>
-                    </div></div>
-                    </section><hr/>
+                            <div className='img1'><img src={img1} /></div>
+                            <div className='btn1'>
+                                <img src={img2} /><br />
+                                <button onClick={() => setModal1(!showModal1)}><BsCartCheckFill />ADD</button>
+                            </div></div>
+                    </section><hr />
                     {/*----------Tables----------*/}
-                    <section id='cart'><br/>
-                    <div className='table-set'>
-                        <h1>Cart</h1>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Items</th>
-                                    <th>Prices</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Egg</td>
-                                    <td>P: 10</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Egg</td>
-                                    <td>P: 10</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Egg</td>
-                                    <td>P: 10</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    </section><hr/>
+                    <section id='cart'><br />
+                        <div className='table-set'>
+                            <h1>Cart</h1>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Items</th>
+                                        <th>Prices</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Egg</td>
+                                        <td>P: 10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Egg</td>
+                                        <td>P: 10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Egg</td>
+                                        <td>P: 10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section><hr />
                     <section id='expen'>
-                    <div className='table-set'>
-                        <h1>Expences</h1><br/>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Items</th>
-                                    <th>Prices</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Egg</td>
-                                    <td>P: 10</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Egg</td>
-                                    <td>P: 10</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Egg</td>
-                                    <td>P: 10</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        <div className='table-set'>
+                            <h1>Expences</h1><br />
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Items</th>
+                                        <th>Prices</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Egg</td>
+                                        <td>P: 10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Egg</td>
+                                        <td>P: 10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Egg</td>
+                                        <td>P: 10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </section>
                 </div>
                 {/*----------Modal----------*/}
@@ -114,10 +114,10 @@ const Board = () => {
                     <div className='modal-content'>
                         <div className='header'>
                             <button onClick={() => setModal1(!showModal1)}>Cancel</button>
-                        </div><br/>
+                        </div><br />
                         <form>
-                            <input type='text' placeholder='Items' /><br/>
-                            <input type='text' placeholder='Price' /><br/>
+                            <input type='text' placeholder='Items' /><br />
+                            <input type='text' placeholder='Price' /><br />
                             <button>Buy</button>
                         </form>
                     </div>
