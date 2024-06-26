@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import { BsCartCheckFill } from "react-icons/bs";
-
-import img1 from '/public/img1.svg'
-import img2 from '/public/img2.svg'
+import 'bootstrap/dist/css/bootstrap.css'
+import img1 from '/img1.svg'
+import img2 from '/img2.svg'
 
 
 
@@ -71,16 +71,16 @@ const Board = () => {
                     </section>
                     <section id='home'>
                         <div className='first-container'>
-                            <div className='btn1 position-fixed bottom-0 end-0 z-3 p-5'>
+                            <div className='btn1 position-fixed bottom-0 end-0 p-5'>
                                 <button onClick={() => setModal1(!showModal1)}><BsCartCheckFill />ADD</button>
                             </div></div>
                     </section>
                 </div>
                 {/*----------Modal----------*/}
-                <div className={`modal ${showModal1 ? 'setopen' : ''}`}>
-                    <div className='overlay'></div>
-                    <div className='modal-content'>
-                        <div className='header'>
+                <div className={`modal1 ${showModal1 ? 'setopen' : ''}`}>
+                    <div className='overlay1'></div>
+                    <div className='modal-content1'>
+                        <div className='header1'>
                             <button onClick={() => setModal1(!showModal1)}>Cancel</button>
                         </div><br />
                         <form>

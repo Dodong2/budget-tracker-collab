@@ -37,6 +37,7 @@ body.active-modal {
 .btn1 {
   display: flex;
   flex-direction: column;
+  z-index: 100;
 }
 
 .btn1 button {
@@ -54,6 +55,7 @@ body.active-modal {
   justify-content: center;
   transition: all ease 0.3s;
   position: relative;
+  z-index: 50;
 }
 .btn1 button:hover {
   background-color: var(--white);
@@ -66,12 +68,12 @@ body.active-modal {
   transform: scale(0.95);
 }
 
-.modal {
+.modal1 {
   display: none;
   position: relative;
 }
-.overlay,
-.modal {
+.overlay1,
+.modal1 {
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -79,10 +81,10 @@ body.active-modal {
   right: 0;
   bottom: 0;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
 }
 
-.overlay {
+.overlay1 {
   background: rgba(0, 0, 0, 0.582);
 }
 
@@ -90,7 +92,8 @@ body.active-modal {
   display: block;
 }
 
-.modal-content {
+
+.modal-content1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,32 +105,32 @@ body.active-modal {
   border-radius: 20px;
   max-width: 400px;
   min-width: 300px;
-  z-index: 20;
+  z-index: 100;
   transition: all ease 0.1s;
 }
-.modal-content form {
+.modal-content1 form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.modal-content .header {
+.modal-content1 .header1 {
   display: flex;
   align-items: center;
   justify-content: end;
   transition: all ease 0.3s;
 }
 
-.header button {
+.header1 button {
   transition: all ease 0.3s;
 }
-.header button:hover {
+.header1 button:hover {
   border: 1px solid var(--red);
   background-color: var(--white);
   color: var(--red);
 }
-.modal-content button {
+.modal-content1 button {
   border: none;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
@@ -140,7 +143,7 @@ body.active-modal {
   align-items: center;
 }
 
-.modal-content form button {
+.modal-content1 form button {
   border: none;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
@@ -155,13 +158,13 @@ body.active-modal {
   transition: all ease 0.3s;
 }
 
-.modal-content form button:hover {
+.modal-content1 form button:hover {
   border: 1px solid var(--black);
   background-color: var(--white);
   color: var(--black);
 }
 
-.modal-content form input {
+.modal-content1 form input {
   border: none;
   border-radius: 10px;
   background-color: var(--black);
@@ -229,6 +232,7 @@ tbody tr:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
 }
 .images {
   display: flex;
@@ -259,11 +263,11 @@ tbody tr:hover {
     width: 200px;
   }
 
-  .modal-content {
+  .modal-content1 {
     max-width: 300px;
     min-width: 300px;
   }
-  .modal-content form input {
+  .modal-content1 form input {
     width: 250px;
   }
   .btn1 button {
@@ -271,6 +275,7 @@ tbody tr:hover {
     left: 50%;
     top: 90%;
     transform: translate(-50%, -50%);
+    z-index: 100;
   }
   .img-holder {
     top: 50%;

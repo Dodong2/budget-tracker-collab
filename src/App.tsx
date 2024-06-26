@@ -6,7 +6,7 @@ const Board = lazy(() => import('./components/Board'))
 
   return (
     <>
-    <Suspense fallback={<div className=''></div>}>
+    <Suspense fallback={<div className=''>Loading</div>}>
     <Board/>
     </Suspense>
     </>
