@@ -14,13 +14,16 @@
   --red: rgb(253, 62, 62);
 }
 
+.main-container {
+  position: relative;
+}
+
 body.active-modal {
   overflow-y: hidden;
 }
 
 .contents {
   padding: 20px;
-  margin-top: 60px;
   position: relative;
 }
 
@@ -31,16 +34,11 @@ body.active-modal {
   flex-wrap: wrap;
 }
 
-.img1 img {
-  width: 500px;
-}
 .btn1 {
   display: flex;
   flex-direction: column;
 }
-.btn1 img {
-  width: 200px;
-}
+
 .btn1 button {
   border: none;
   border-radius: 20px;
@@ -55,6 +53,7 @@ body.active-modal {
   align-items: center;
   justify-content: center;
   transition: all ease 0.3s;
+  position: relative;
 }
 .btn1 button:hover {
   background-color: var(--white);
@@ -174,14 +173,14 @@ body.active-modal {
 }
 
 .table-set {
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 20px;
 }
 
-.table-set h1 {
+.table-set main h1 {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3em;
@@ -190,8 +189,15 @@ body.active-modal {
 }
 
 table {
-  width: 10%;
-  border-collapse: collapse;
+  width: 90%;
+  border: 1px solid var(--black);
+}
+
+table tr td {
+  border: 1px solid var(--black);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 thead {
@@ -200,14 +206,15 @@ thead {
 
 th,
 td {
-  border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  border: 1px solid var(--black);
 }
 
 th {
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--black);
+  color: var(--yellow);
+  border: 1px solid var(--black);
 }
 
 tbody tr:nth-child(even) {
@@ -215,17 +222,33 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-  background-color: #f1f1f1;
+  background-color: var(--yellow);
 }
-
-.icons {
-  font-size: 1em;
+.img-holder {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+  position: relative;
+}
+.images img {
+  opacity: 0.2;
+  width: 350px;
 }
 
 @media only screen and (max-width: 767px) {
   /* .main-container {
       width: 200px;
     } */
+  .contents {
+    padding: 0px;
+  }
   .img1 img {
     width: 300px;
   }
@@ -242,5 +265,25 @@ tbody tr:hover {
   }
   .modal-content form input {
     width: 250px;
+  }
+  .btn1 button {
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+  }
+  .img-holder {
+    top: 50%;
+  }
+  .images {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .images img {
+    opacity: 0.2;
+    width: 250px;
+  }
+  table tr td {
+    font-size: 1em;
   }
 }
