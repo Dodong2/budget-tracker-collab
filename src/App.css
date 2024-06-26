@@ -18,6 +18,10 @@
   position: relative;
 }
 
+body {
+  background-color: var(--white);
+}
+
 body.active-modal {
   overflow-y: hidden;
 }
@@ -214,6 +218,21 @@ td {
   border: 1px solid var(--black);
 }
 
+td:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease .2s;
+} 
+td:nth-child(4):hover {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+
+td:nth-child(4) button {
+  border: none;
+  background-color: transparent;
+}
 th {
   background-color: var(--black);
   color: var(--yellow);
@@ -242,7 +261,7 @@ tbody tr:hover {
   position: relative;
 }
 .images img {
-  opacity: 0.2;
+  opacity: 0.1;
   width: 350px;
 }
 
