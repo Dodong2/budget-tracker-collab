@@ -152,7 +152,7 @@ const Board: React.FC = () => {
                                             <td>{index + 1}</td>
                                             <td>{expense.things}</td>
                                             <td>{expense.price}</td>
-                                            <td><button onClick={() => handleDeleteExpense(expense.expense_id)}><MdDeleteForever/></button></td>
+                                            <td onClick={() => handleDeleteExpense(expense.expense_id)}><button onClick={() => handleDeleteExpense(expense.expense_id)}><MdDeleteForever/></button></td>
                                         </tr>
                                     ))}
                                 </tbody>

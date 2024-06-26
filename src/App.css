@@ -232,6 +232,8 @@ td:nth-child(4):hover {
 td:nth-child(4) button {
   border: none;
   background-color: transparent;
+  position: relative;
+  padding: 14px;
 }
 th {
   background-color: var(--black);
